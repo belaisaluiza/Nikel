@@ -1,6 +1,7 @@
 const myModal = new bootstrap.Modal("#transaction-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
+
 let data = {
     transactions: []
 };
@@ -26,6 +27,9 @@ document.getElementById("transaction-form").addEventListener("submit", function(
     saveData(data);
     e.target.reset();
     myModal.hide();
+
+    getCashIn();
+    getCashOut ();
 
     alert("Lançamento adicionado com sucesso.");
 
