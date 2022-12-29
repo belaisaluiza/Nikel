@@ -30,7 +30,8 @@ document.getElementById("transaction-form").addEventListener("submit", function(
 
     getCashIn();
     getCashOut ();
-
+    getTotal ();
+    
     alert("Lançamento adicionado com sucesso.");
 
 
